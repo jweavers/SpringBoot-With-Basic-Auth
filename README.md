@@ -8,11 +8,11 @@ It is a Maven project, which is targeted for beginner to quick start with Spring
 To use this proejct, all you need to import this as Maven project and update application.properties file
 
 <pre>
-SERVER.PORT=<update port numer>
+SERVER.PORT=#update port numer
 server.servlet.context-path=/MavenProject
-spring.datasource.url=jdbc:oracle:thin:@<update database server>:<port>:<sid>
-spring.datasource.username=<db username>
-spring.datasource.password=<db user password>
+spring.datasource.url=#update jdbc url
+spring.datasource.username=#db username
+spring.datasource.password=#db user password
 spring.datasource.driver-class-name=oracle.jdbc.driver.OracleDriver
 spring.jpa.generate-ddl=true
 spring.datasource.hikari.connection-timeout=30000
