@@ -21,4 +21,4 @@ spring.datasource.hikari.maximum-pool-size=50
 
 Application would be accessible from 
 
-<pre>http://localhost:<port>/MavenProject/getAll</pre>
+<code>http://localhost:#port#/MavenProject/getAll</code>
