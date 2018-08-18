@@ -4,3 +4,15 @@ It is a Maven project, which is targeted for beginner to quick start with Spring
 1. Demonstration of GET/POST request
 2. Connecting Oracle Database
 3. Basic Authentication to secure your specific URL based on roles.
+
+To use this proejct, all you need to import this as Maven project and update application.properties file
+
+SERVER.PORT=<update port numer>
+server.servlet.context-path=/MavenProject
+spring.datasource.url=jdbc:oracle:thin:@<update database server>:<port>:<sid>
+spring.datasource.username=<db username>
+spring.datasource.password=<db user password>
+spring.datasource.driver-class-name=oracle.jdbc.driver.OracleDriver
+spring.jpa.generate-ddl=true
+spring.datasource.hikari.connection-timeout=30000
+spring.datasource.hikari.maximum-pool-size=50
