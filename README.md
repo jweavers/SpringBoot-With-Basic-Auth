@@ -18,3 +18,7 @@ spring.jpa.generate-ddl=true
 spring.datasource.hikari.connection-timeout=30000
 spring.datasource.hikari.maximum-pool-size=50
 </pre>
+
+Application would be accessible from 
+
+<pre>http://localhost:<port>/MavenProject/getAll</pre>
