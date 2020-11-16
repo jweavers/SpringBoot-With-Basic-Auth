@@ -27,7 +27,7 @@ public class MyService {
 		return "Added Successfully !!";
 	}
 	
-	public Customer getCustomer (String customerId)
+	public Customer getCustomer (Long customerId)
 	{
 		return repository.findById(customerId).get();
 	}

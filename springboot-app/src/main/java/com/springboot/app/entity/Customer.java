@@ -1,47 +1,29 @@
 package com.springboot.app.entity;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
 @Entity
 public class Customer {
-	@Id
-	private String id;
-	private String name;
-	private int age;
 
-	public int getAge() {
-		return age;
-	}
-
-	public void setAge(int age) {
-		this.age = age;
-	}
-
-	public char getSex() {
-		return sex;
-	}
-
-	public void setSex(char sex) {
-		this.sex = sex;
-	}
-
-	private char sex;
-
-	private String getId() {
-		return id;
-	}
-
-	private void setId(String id) {
-		this.id = id;
-	}
-
-	private String getName() {
-		return name;
-	}
-
-	private void setName(String name) {
-		this.name = name;
-	}
+    @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
+    private Long id;
+    private String firstName;
+    private String lastName;
+    private String name;
 
 }

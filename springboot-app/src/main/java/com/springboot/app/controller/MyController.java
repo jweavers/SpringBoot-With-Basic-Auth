@@ -30,7 +30,7 @@ public class MyController {
 	}
 	
 	@RequestMapping(value="/get/{customerId}")
-	public Customer getResponse(@PathVariable String customerId)
+	public Customer getResponse(@PathVariable Long customerId)
 	{
 		return service.getCustomer(customerId);
 	}
